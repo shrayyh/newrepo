@@ -1,0 +1,39 @@
+/* ContactSection.css */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Background color of the contact section */
+  padding: 2.5rem;
+  overflow: hidden; /* Prevent content overflow */
+  width: 100%; /* Ensure it spans the full width of the page */
+  position: relative;
+}
+
+.contact-card {
+  background-color: rgba(18, 35, 20, 0.864); /* Background color of the card */
+  border-radius: 12px;
+  border-color: rgb(124, 169, 124);
+  border-width: 0.4rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 320px;
+  margin: 20px;
+  text-align: flex-start;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden; 
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-card {
+    width: 90%; /* Adjust card width on small screens */
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .contact-card {
+    width: 350px; /* Reset card width on larger screens */
+  }
+}

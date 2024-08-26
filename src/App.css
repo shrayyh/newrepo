@@ -1,0 +1,54 @@
+.navbar {
+  background-color: rgba(18, 35, 20, 0.864); /* Dark background color */
+  color: white; /* Text color */
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+.navbar a {
+  color:white; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 1rem; /* Space between links */
+  
+}
+.navbar ul {
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Align items to the right */
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Remove bullets */
+}
+
+.navbar li {
+  margin: 0 1rem; /* Space between links */
+}
+.navbar a:hover {
+  color:antiquewhite; /* Change color on hover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase; /* Make text capitalized */
+}
+
+.navbar ul {
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Align items to the right */
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Remove bullets */
+}
+
+.navbar li {
+  margin: 0 1rem; /* Space between links */
+}
