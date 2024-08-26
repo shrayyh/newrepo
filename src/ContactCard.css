@@ -3,28 +3,57 @@
   border-radius: 12px;
   border: 0.4rem solid rgb(124, 169, 124);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  padding: 25px;
-  width: 320px; /* Fixed width for all cards */
-  height: 400px; /* Fixed height for all cards */
+  padding: 15px; /* Reduced padding */
+  width: 250px; /* Reduced width */
+  height: 300px; /* Reduced height */
   margin: 20px;
   text-align: center; /* Center all text inside the card */
   position: relative;
   transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
   overflow: hidden;
 }
-.contact-us-heading {
-  font-weight: 600; /* Semibold */
-  text-transform: uppercase; /* Capitalize all letters */
+
+@media only screen and (max-width: 600px) {
+  .contact-card {
+    width: 80%; /* Adjust card width on small screens */
+    height: auto; /* Allow height to adjust automatically on small screens */
+  }
 }
+
+@media only screen and (min-width: 900px) {
+  .contact-card {
+    width: 250px; /* Reset card width on larger screens */
+    height: 300px; /* Reset card height on larger screens */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-card-img {
+    height: auto; /* Allow height to adjust automatically */
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .contact-card-img {
+    height: auto; /* Ensure height adjusts based on the card width */
+  }
+}
+
 
 
 .contact-card-img {
   width: 100%; /* Full width of the card */
-  height: 100%; /* Fixed height for images */
+  height: 100%; /* Maintain aspect ratio */
   object-fit: cover; /* Cover the container while preserving aspect ratio */
   border-radius: 12px; /* Match card border radius */
-  transition: transform 0.4s ease-in-out; /* Smooth transition */
+  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out; /* Smooth transition */
+  filter: grayscale(0%); /* Make images black and white */
 }
+
+.contact-card:hover .contact-card-img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  filter: grayscale(100%); /* Remove grayscale on hover */
+}
+
 
 .card-content {
   display: flex;
@@ -47,9 +76,7 @@
   opacity: 1; /* Show content on hover */
 }
 
-.contact-card:hover .contact-card-img {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
+
 
 .card-content h2 {
   font-size: 1.7rem;
@@ -118,20 +145,6 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhance shadow */
 }
 
-/* Responsive Styles */
-@media only screen and (max-width: 600px) {
-  .contact-card {
-    width: 90%; /* Adjust card width on small screens */
-    height: auto; /* Allow height to adjust automatically on small screens */
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .contact-card {
-    width: 320px; /* Reset card width on larger screens */
-    height: 400px; /* Reset card height on larger screens */
-  }
-}
 
 .contact-email {
   color: white; /* Link color */

@@ -10,7 +10,7 @@ const contacts = [
     linkedin: 'https://www.linkedin.com/in/kailash-nadh/',
     additionalInfo: 'Expert in financial technology and software development.',
     contactLink: 'https://nadh.in/',
-    imageUrl: 'https://substack-post-media.s3.amazonaws.com/public/images/755f1876-31b2-44b1-8f25-eb70c4926b2b_450x450.jpeg', // Replace with actual image URL
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxKAAobLxFVezj8dU9jL4zpC1K62NYzbt8eQ&s', // Replace with actual image URL
   },
   {
     name: 'Rushabh Mehta',
@@ -19,7 +19,7 @@ const contacts = [
     linkedin: 'https://www.linkedin.com/in/rushabhmehta/',
     additionalInfo: 'Known for creating the ERPNext open-source project.',
     contactLink: 'https://www.linkedin.com/in/rushabhmehta1?originalSubdomain=in',
-    imageUrl:'https://miro.medium.com/v2/resize:fit:2400/1*8PdQjAS3TF0cpO0iys6Gpg.jpeg', // Replace with actual image URL
+    imageUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_x9KNoCBWmRcm7cQtmMI_0NERqr0WqfKwTw&s', // Replace with actual image URL
   },
   {
     name: 'Poruri Sai Rahul',

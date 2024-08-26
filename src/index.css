@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* Custom global styles */
 body {
@@ -13,10 +11,7 @@ body {
   background-color: black; /* Set the background color to black */
   color: white; /* Set the default text color to white for contrast */
 }
-.contact-us-heading {
-  font-weight: 600; /* Semibold */
-  text-transform: uppercase; /* Capitalize all letters */
-}
+
 
 
 code {

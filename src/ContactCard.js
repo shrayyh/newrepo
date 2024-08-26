@@ -10,7 +10,7 @@ const ContactCard = ({ name, email, phone, linkedin, additionalInfo, contactLink
 
   return (
     <div className="contact-card bg-[#122314d9] border-[0.4rem] border-[#7CA97C] shadow-md mx-auto my-5 text-left relative transition-all duration-600 ease-in-out overflow-hidden">
-      <img src={imageUrl} alt={`${name}'s photo`} className="contact-card-img grayscale" />
+      <img src={imageUrl} alt="" className="contact-card-img grayscale" />
       <div className="card-content flex flex-col items-center justify-center">
         <h2 className="text-xl mb-2 text-white font-bold uppercase">{name}</h2>
         <div className="details-container">

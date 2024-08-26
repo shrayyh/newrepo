@@ -4,7 +4,8 @@ import ContactSection from './ContactSection';
 const ContactPage = () => {
   return (
     <div>
-      <h1 className="text-4xl text-center py-8 font-semibold uppercase text-white">Contact Us</h1>
+      <h1 style={{ textAlign: 'center', marginTop: '50px',fontWeight:600 }}>CONTACT US</h1>
+
       <ContactSection />
     </div>
   );
