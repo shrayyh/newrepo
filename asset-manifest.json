@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/shrayyh/newrepo/static/css/main.7fffc6ca.css",
-    "main.js": "/shrayyh/newrepo/static/js/main.3af15fbd.js",
-    "static/js/453.0a36081d.chunk.js": "/shrayyh/newrepo/static/js/453.0a36081d.chunk.js",
-    "index.html": "/shrayyh/newrepo/index.html",
-    "main.7fffc6ca.css.map": "/shrayyh/newrepo/static/css/main.7fffc6ca.css.map",
-    "main.3af15fbd.js.map": "/shrayyh/newrepo/static/js/main.3af15fbd.js.map",
-    "453.0a36081d.chunk.js.map": "/shrayyh/newrepo/static/js/453.0a36081d.chunk.js.map"
+    "main.css": "/newrepo/static/css/main.7fffc6ca.css",
+    "main.js": "/newrepo/static/js/main.e3965597.js",
+    "static/js/453.0a36081d.chunk.js": "/newrepo/static/js/453.0a36081d.chunk.js",
+    "index.html": "/newrepo/index.html",
+    "main.7fffc6ca.css.map": "/newrepo/static/css/main.7fffc6ca.css.map",
+    "main.e3965597.js.map": "/newrepo/static/js/main.e3965597.js.map",
+    "453.0a36081d.chunk.js.map": "/newrepo/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7fffc6ca.css",
-    "static/js/main.3af15fbd.js"
+    "static/js/main.e3965597.js"
   ]
 }
