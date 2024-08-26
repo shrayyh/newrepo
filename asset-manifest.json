@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shrayyh/newrepo.git/static/css/main.50ff2447.css",
+    "main.js": "/shrayyh/newrepo.git/static/js/main.56f2e614.js",
+    "static/js/453.0a36081d.chunk.js": "/shrayyh/newrepo.git/static/js/453.0a36081d.chunk.js",
+    "index.html": "/shrayyh/newrepo.git/index.html",
+    "main.50ff2447.css.map": "/shrayyh/newrepo.git/static/css/main.50ff2447.css.map",
+    "main.56f2e614.js.map": "/shrayyh/newrepo.git/static/js/main.56f2e614.js.map",
+    "453.0a36081d.chunk.js.map": "/shrayyh/newrepo.git/static/js/453.0a36081d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50ff2447.css",
+    "static/js/main.56f2e614.js"
+  ]
+}
