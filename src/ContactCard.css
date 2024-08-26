@@ -3,7 +3,7 @@
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
   gap: 20px; /* Adjust the gap between cards as needed */
   justify-content: center; /* Center cards horizontally */
-  padding:20 px;
+  padding: 20px; /* Ensure proper padding */
 }
 
 .contact-card {
@@ -20,156 +20,43 @@
   overflow: hidden;
 }
 
-.first-card {
-  margin-left: 10px; /* Adjust margin for the first card */
-}
-
-
-@media only screen and (max-width: 600px) {
+/* Responsive Styling for Mobile (smaller screens) */
+@media (max-width: 600px) {
   .contact-card {
-    width: 80%; /* Adjust card width on small screens */
-    height: auto; /* Allow height to adjust automatically on small screens */
+    width: 80%; /* Make the card wider on mobile */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .contact-card-img {
+    height: auto; /* Automatically adjust image height */
   }
 }
 
-@media only screen and (min-width: 900px) {
+/* Responsive Styling for Larger Screens */
+@media (min-width: 900px) {
   .contact-card {
-    width: 250px; /* Reset card width on larger screens */
-    height: 300px; /* Reset card height on larger screens */
+    width: 250px; /* Fixed width on large screens */
+    height: 300px; /* Fixed height on large screens */
   }
-}
-@media only screen and (max-width: 600px) {
+
   .contact-card-img {
-    height: auto; /* Allow height to adjust automatically */
+    height: 100%; /* Ensure the image fills the card */
   }
 }
 
-@media only screen and (min-width: 900px) {
-  .contact-card-img {
-    height: auto; /* Ensure height adjusts based on the card width */
-  }
-}
-
-
-
+/* Styling for Card Images */
 .contact-card-img {
-  width: 100%; /* Full width of the card */
-  height: 100%; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the container while preserving aspect ratio */
-  border-radius: 12px; /* Match card border radius */
-  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out; /* Smooth transition */
-  filter: grayscale(0%); /* Make images black and white */
+  width: 100%; /* Make image fill the entire card width */
+  height: 100%; /* Maintain full card height */
+  object-fit: cover; /* Ensure aspect ratio is preserved */
+  border-radius: 12px; /* Match the card's border radius */
+  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+  filter: grayscale(100%); /* Apply grayscale by default */
 }
 
 .contact-card:hover .contact-card-img {
   transform: scale(1.05); /* Slight zoom effect on hover */
-  filter: grayscale(100%); /* Remove grayscale on hover */
+  filter: grayscale(0%); /* Remove grayscale on hover */
 }
 
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Center content vertically */
-  height: 100%; /* Ensure card content takes full height */
-  position: absolute;
-  bottom: 0; /* Position content at the bottom of the card */
-  left: 0;
-  right: 0;
-  padding: 15px; /* Add padding */
-  opacity: 0; /* Hide content by default */
-  background-color: rgba(0, 0, 0, 0.8); /* Dark background for better text visibility */
-  border-radius: 0 0 12px 12px; /* Match bottom border radius */
-  transition: opacity 0.4s ease-in-out; /* Smooth transition for opacity */
-}
-
-.contact-card:hover .card-content {
-  opacity: 1; /* Show content on hover */
-}
-
-
-
-.card-content h2 {
-  font-size: 1.7rem;
-  margin-bottom: 10px;
-  color: white; /* Ensure text is visible */
-}
-
-.card-content p {
-  margin: 8px 0;
-  color: white; /* Ensure text is visible */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-content a {
-  color: whitesmoke; /* Ensure link text is visible */
-  text-decoration: none; /* No underline by default */
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.card-content a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-.card-content .icon {
-  margin-right: 8px;
-  color: rgb(124, 169, 124);
-}
-
-.contact-btn {
-  background-color: rgb(124, 169, 124);
-  color: black;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 25px;
-  margin-top: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.contact-btn:hover {
-  background-color: rgb(62, 96, 62);
-  transform: scale(1.05);
-}
-
-.additional-info {
-  display: none;
-  padding: 10px;
-  color: aliceblue;
-  font-size: 0.9rem;
-  text-align: center; /* Center align additional info text */
-}
-
-.contact-card:hover .additional-info {
-  display: block;
-}
-
-/* Hover effect */
-.contact-card:hover {
-  transform: scale(1.05); /* Increase the card size */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhance shadow */
-}
-
-
-.contact-email {
-  color: white; /* Link color */
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.contact-email:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-.icon {
-  margin-right: 8px; /* Space between icon and text */
-}
+/* Styling for

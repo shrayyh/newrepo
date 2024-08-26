@@ -4,16 +4,15 @@ import './ContactCard.css'; // Ensure the path is correct
 
 const ContactCard = ({ name, email, phone, linkedin, additionalInfo, contactLink, imageUrl }) => {
   const handleContactClick = () => {
-    // Redirect to the contact link when the button is clicked
     window.open(contactLink, '_blank');
   };
 
   return (
-    <div className="contact-card bg-[#122314d9] border-[0.4rem] border-[#7CA97C] shadow-md mx-auto my-5 text-left relative transition-all duration-600 ease-in-out overflow-hidden">
-      <img src={imageUrl} alt="" className="contact-card-img grayscale" />
-      <div className="card-content flex flex-col items-center justify-center">
-        <h2 className="text-xl mb-2 text-white font-bold uppercase">{name}</h2>
-        <div className="details-container">
+    <div className="contact-card bg-[#122314d9] border-[0.4rem] border-[#7CA97C] shadow-md mx-auto my-5 p-4 md:p-6 lg:p-8 text-left relative transition-all duration-600 ease-in-out overflow-hidden max-w-full sm:max-w-xs md:max-w-sm lg:max-w-md">
+      <img src={imageUrl} alt="" className="contact-card-img grayscale w-full h-48 object-cover rounded-t-lg" />
+      <div className="card-content flex flex-col items-center justify-center p-4">
+        <h2 className="text-lg sm:text-xl lg:text-2xl mb-2 text-white font-bold uppercase text-center">{name}</h2>
+        <div className="details-container text-center">
           <p className="text-white flex items-center justify-center mb-2">
             <a href={`mailto:${email}`} className="text-whitesmoke flex items-center" aria-label={`Email ${name}`}>
               <FaEnvelope className="icon text-[#7CA97C] mr-2" />
@@ -30,12 +29,12 @@ const ContactCard = ({ name, email, phone, linkedin, additionalInfo, contactLink
             <FaLinkedin className="icon text-[#7CA97C] mr-2" />
             LinkedIn
           </a>
-          <div className="additional-info text-aliceblue text-sm text-left">
+          <div className="additional-info text-aliceblue text-sm text-left mt-2">
             <p><strong>Additional Info:</strong></p>
             <p>{additionalInfo}</p>
           </div>
           <button 
-            className="contact-btn bg-[#7CA97C] text-black border-none py-3 px-6 rounded-full mt-3 cursor-pointer transition-colors duration-300 ease-in-out hover:bg-[#3E6040] hover:scale-105"
+            className="contact-btn bg-[#7CA97C] text-black border-none py-2 px-4 sm:py-3 sm:px-6 rounded-full mt-3 cursor-pointer transition-colors duration-300 ease-in-out hover:bg-[#3E6040] hover:scale-105"
             onClick={handleContactClick}
             aria-label={`Contact ${name}`}
           >

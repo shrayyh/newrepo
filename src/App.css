@@ -1,28 +1,34 @@
 .navbar {
   background-color: rgba(18, 35, 20, 0.864); /* Dark background color */
   color: white; /* Text color */
-  padding: 1rem; /* Adjust padding as needed */
+  padding: 1rem; /* Adjust padding */
+  position: sticky;
+  top: 0;
+  z-index: 50; /* Make navbar sticky */
+  width: 100%; /* Ensure full width */
 }
 
-.navbar a {
-  color:white; /* Link color */
-  text-decoration: none; /* Remove underline from links */
-  margin: 0 1rem; /* Space between links */
-  
-}
 .navbar ul {
   display: flex; /* Use flexbox for layout */
   justify-content: flex-end; /* Align items to the right */
   margin: 0;
   padding: 0;
   list-style-type: none; /* Remove bullets */
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.navbar a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 1rem; /* Space between links */
+}
+
+.navbar a:hover {
+  color: antiquewhite; /* Change color on hover */
 }
 
 .navbar li {
   margin: 0 1rem; /* Space between links */
-}
-.navbar a:hover {
-  color:antiquewhite; /* Change color on hover */
 }
 
 .nav-links {
@@ -41,14 +47,21 @@
   text-transform: uppercase; /* Make text capitalized */
 }
 
-.navbar ul {
-  display: flex; /* Use flexbox for layout */
-  justify-content: flex-end; /* Align items to the right */
-  margin: 0;
-  padding: 0;
-  list-style-type: none; /* Remove bullets */
-}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem; /* Reduce padding on mobile */
+  }
 
-.navbar li {
-  margin: 0 1rem; /* Space between links */
+  .navbar ul {
+    flex-direction: column; /* Stack links vertically on mobile */
+    align-items: center; /* Center the links */
+  }
+
+  .navbar li {
+    margin: 0.5rem 0; /* Space links vertically on mobile */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Reduce font size on mobile */
+  }
 }
